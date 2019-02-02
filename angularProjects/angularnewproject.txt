@@ -1,0 +1,2 @@
+ng new trykori --router
+ng g c user

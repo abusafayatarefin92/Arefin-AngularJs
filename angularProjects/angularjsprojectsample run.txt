@@ -1,0 +1,7 @@
+npm install
+ng serve --open
+or,
+npm start
+another way to open mvn project
+
+mvn clean install

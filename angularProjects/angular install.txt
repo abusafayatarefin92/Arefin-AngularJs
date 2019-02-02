@@ -1,0 +1,7 @@
+npm -v
+node -v
+ng -v
+npm install -g @angular/cli
+ng new demo
+ng serve --open
+ctrl+c to stop server
