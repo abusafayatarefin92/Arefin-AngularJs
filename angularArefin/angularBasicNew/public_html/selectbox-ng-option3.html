@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app='todoApp' ng-controller="myCtrl">
+            <p>Select a car:</p>
+            <select ng-model="selectedCar" ng-options="x for (x, y) in cars">
+
+            </select>
+            <h1>You selected: {{selectedCar}}</h1>
+
+        </div>
+        <p>This example demonstrates the use of an object as the data source when creating a dropdown list.</p>
+        <script>
+            var app = angular.module("todoApp", []);
+            app.controller("myCtrl", function ($scope) {
+                $scope.cars = {
+                    car01: "Ford",
+                    car02: "Fiat",
+                    car03: "Volvo"
+                }
+            });
+        </script>
+        <p>When you use the ng-options directive to create dropdown lists, the selected value can be an object.</p>
+        <p>In this example you can display both the model and the color of the selected element.</p>
+    </body>
+</html>

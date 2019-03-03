@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body ng-app="">
+        <p>Try leaving the first input field blank:</p>
+        <form name="myForm">
+            <p>Name:
+                <input name="myName" ng-model="myName" required/>
+                <span ng-show="myForm.myName.$touched && myForm.myName.$invalid">
+                    The name required.
+                </span>
+            </p>
+            <p>Address:
+                <input name="myAddress" ng-model="myAddress" required/>
+            </p>
+        </form>
+        <p>We use the ng-show directive to only show the error message if the field has been touched AND is empty.</p>
+    </body>
+</html>

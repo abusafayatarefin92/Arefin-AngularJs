@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <div ng-app="myApp" ng-controller="myCtrl">
+            <ul>
+                <li ng-repeat="x in names">{{x}}</li>
+            </ul>
+        </div>
+        <script>
+            var app = angular.module("myApp", []);
+            app.controller("myCtrl", function ($scope) {
+                $scope.names = ["Emil", "Tobias", "Linus"];
+            });
+        </script>
+        <p>The variable "x" has a different value for each repetition, proving that each repetition has its own scope.</p>
+    </body>
+</html>

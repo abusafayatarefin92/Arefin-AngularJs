@@ -1,0 +1,6 @@
+<form [formGroup]="quiz" (ngSubmit)="hi(quiz.value)">
+Gender:<input type="radio" class="fortextbox" name="gender" formControlName="gender" value="male"/>Male<br/>
+<input type="radio" class="fortextbox" name="gender" formControlName="gender" value="female" />Female<br/>
+<input type="radio" class="fortextbox" name="gender" formControlName="gender" value="other" />Male<br/>
+<input type = "submit" class="forsubmit" value = "Send">
+</form>

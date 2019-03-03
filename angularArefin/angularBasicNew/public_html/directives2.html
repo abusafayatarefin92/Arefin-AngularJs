@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body ng-app="myApp">
+    <w3-test-directive></w3-test-directive>
+    <script>
+        var app = angular.module("myApp", []);
+        app.directive("w3TestDirective", function () {
+            return{
+                template: "<h1>Made by directive!</h1>"
+            };
+        });
+    </script>
+</body>
+</html>

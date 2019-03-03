@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <p>
+            Change the value of the input field:
+        </p>
+        <div ng-app="" ng-init="myCol = 'lightblue'">
+            <input style="background-color: {{myCol}}" ng-model="myCol"/>
+        </div>
+    </body>
+</html>

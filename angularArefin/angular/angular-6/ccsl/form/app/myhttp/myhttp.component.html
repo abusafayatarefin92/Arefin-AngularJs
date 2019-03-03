@@ -1,0 +1,26 @@
+<h1>Users ok</h1>
+
+<ul *ngFor="let user of users$">
+  <li>
+    <a routerLink="/details/{{user.firstName}}">{{ user.firstName }}</a>
+	</li>
+  <li>{{ user.lastName }}</li>
+ <li>{{ user.email }}</li>
+    
+
+</ul>
+<hr/>
+<table style="width:100%">
+<tr>
+<th>ID</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+</tr>
+<tr *ngFor="let u of users$">
+<td>{{u.id}}</td>
+<td>{{u.firstName}}</td>
+<td>{{u.lastName}}</td>
+<td>{{u.email}}</td>
+</tr>
+</table>

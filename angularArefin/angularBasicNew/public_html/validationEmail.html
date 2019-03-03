@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body ng-app="">
+        <p>Try writing an E-mail address in the input field:</p>
+        <form name="myForm">
+            <input type="email" name="myInput" ng-model="myInput"/>
+        </form>
+        <p>The input's validate state is:</p>
+        <h1>{{myForm.myInput.$valid}}</h1>
+        <p>Note that the state of the input field is "true" before you start writing in it, even if it does not contain an e-mail address.</p>
+    </body>
+</html>

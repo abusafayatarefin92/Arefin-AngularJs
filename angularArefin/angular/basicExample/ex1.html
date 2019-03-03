@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+ <div ng-app="myApp" ng-controller="myCtrl">
+ ===========Welcome Angular 5========== 
+<hr/>
+First Number: <input type="text" ng-model="fn"><br>
+Last Number: <input type="text" ng-model="ln"><br>
+<hr/>
+:::::::::::::::::Result:::::::::::::::
+<br>
+Total: {{fn + " + " + ln+" = "+ total}}
+</div>
+
+<script>
+
+var app=angular.module('myApp',[]);
+app.controller('myCtrl', function($scope){
+$scope.fn=15;
+$scope.ln=13;
+$scope.total= $scope.fn + $scope.ln
+});
+</script> 
+</body>
+</html>

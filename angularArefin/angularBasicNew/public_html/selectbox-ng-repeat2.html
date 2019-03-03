@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app='todoApp' ng-controller="myCtrl">
+            <p>Select a car:</p>
+            <select ng-model="selectedCar">
+                <option ng-repeat="x in cars" value="{{x.model}}">{{x.model}}</option>
+            </select>
+            <h1>You have selected: {{selectedCar}}</h1>
+        </div>
+        <script>
+            var app = angular.module("todoApp", []);
+            app.controller("myCtrl", function ($scope) {
+                $scope.cars = [
+                    {model: "Ford Mustang", color: "red"},
+                    {model: "Fiat 500", color: "white"},
+                    {model: "Volvo XC90", color: "black"}
+                ];
+            });
+        </script>
+        <p>When you use the ng-repeat directive to create dropdown lists, the selected value must be a string.</p>
+        <p>In this example you will have to choose between the color or the model to be your selected value.</p>
+    </body>
+</html>

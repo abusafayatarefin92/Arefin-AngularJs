@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="formCtrl">
+            <form novalidate>
+                First Name:<br/>
+                <input type="text" ng-model="user.firstName"/><br/>
+                Last Name:<br/>
+                <input type="text" ng-model="user.lastName"/><br/><br/>
+                <button ng-click="reset()">RESET</button>
+            </form>
+            <p>form = {{user}}</p>
+            <p>master = {{master}}</p>
+        </div>
+        <script>
+            var app = angular.module("myApp", []);
+            app.controller("formCtrl", function ($scope) {
+                $scope.master = {firstName: "John", lastName: "Doe"};
+                $scope.reset = function () {
+                    $scope.user = angular.copy($scope.master);
+                };
+                $scope.reset();
+            });
+        </script>
+    </body>
+</html>

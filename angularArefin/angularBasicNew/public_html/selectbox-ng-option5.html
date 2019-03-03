@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app='todoApp' ng-controller="myCtrl">
+            <p>Select a car:</p>
+            <select ng-model="selectedCar" ng-options="y.brand for (x, y) in cars">
+
+            </select>
+            <h1>You selected: {{selectedCar.brand}}</h1>
+            <h2>Model: {{selectedCar.model}}</h2>
+            <h3>Color: {{selectedCar.color}}</h3>
+            <p>The visible text inside the dropdown list can also be a property of the value object.</p>
+        </div>
+
+        <script>
+            var app = angular.module("todoApp", []);
+            app.controller("myCtrl", function ($scope) {
+                $scope.cars = {
+                    car01: {brand: "Ford", model: "Mustang", color: "red"},
+                    car02: {brand: "Fiat", model: "500", color: "white"},
+                    car03: {brand: "Volvo", model: "XC90", color: "black"}
+                }
+            });
+        </script>
+
+    </body>
+</html>

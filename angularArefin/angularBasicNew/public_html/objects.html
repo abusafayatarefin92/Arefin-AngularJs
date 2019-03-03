@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
+            <p>
+                The full name is: {{person.firstName}}
+            </p>
+            <p>
+                The full name is: {{person.lastName}}
+            </p>
+            <p>
+                The name is
+                <span ng-bind="person.firstName"></span>
+            </p>
+            <p>
+                The name is
+                <span ng-bind="person.lastName"></span>
+            </p>
+        </div>
+    </body>
+</html>

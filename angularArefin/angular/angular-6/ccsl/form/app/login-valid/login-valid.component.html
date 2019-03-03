@@ -1,0 +1,16 @@
+<div>
+   <form [formGroup] = "formValiddata" (ngSubmit) = "onsubmitValidForm(formValiddata.value)" >
+      <input type = "text" class = "fortextbox" name = "emailid" placeholder = "emailid" 
+         formControlName = "emailid">
+      <br/>
+      <input type = "password" class = "fortextbox" name = "passwd" 
+         placeholder = "passwd" formControlName = "passwd">
+      <br/>
+      <input type = "submit" [disabled] = "!formValiddata.valid" class = "forsubmit" 
+         value = "Log In">
+   </form>
+</div>
+
+<p>
+   Email entered is : {{emailid | uppercase}}
+</p>

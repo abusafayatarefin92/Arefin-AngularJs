@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <div ng-app="myApp" ng-controller="myCtrl">
+            <p>The time is:</p>
+            <h3>{{theTime}}</h3>
+        </div>
+        <p>The $interval service runs a function every specified millisecond.</p>
+        <script>
+            var app = angular.module("myApp", []);
+            app.controller("myCtrl", function ($scope, $interval) {
+                $scope.theTime = new Date().toLocaleTimeString();
+                $interval(function () {
+                    $scope.theTime = new Date().toLocaleTimeString();
+                }, 1000);
+            });
+        </script>
+    </body>
+</html>

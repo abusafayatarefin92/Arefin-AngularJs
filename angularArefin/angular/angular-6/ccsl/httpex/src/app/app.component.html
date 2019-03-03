@@ -1,0 +1,22 @@
+<form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+<input type="text" class="fortextbox" name="searchid" placeholder="searchid" 
+         formControlName="searchid">
+<input type="submit" value="Submit"/>
+
+</form>
+<p>Search ID: {{searchid}}</p>
+<table style="width:100%">
+<tr>
+<th>ID</th>
+<th>User Name</th>
+<th>Address</th>
+<th>Email</th>
+</tr>
+<tr *ngFor="let u of userbyid$">
+<td>{{u.id}}</td>
+<td>{{u.username}}</td>
+<td>{{u.address.suite}}</td>
+<td>{{u.email}}</td>
+</tr>
+</table>
+<router-outlet></router-outlet>

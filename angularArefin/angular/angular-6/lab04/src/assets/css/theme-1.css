@@ -1,0 +1,651 @@
+/* ////////////////////////////////   materialcss theme stylesheet /////////////////////////////////////////// */
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+  	1. Prepage loader
+2. Header / #header
+3. Content / #content
+	1. Helper class
+    2. Left Sidebar
+    3. Right Sidebar
+    4. Index
+    5. Dropdown
+    6. Collections
+    7. Tabs
+    8. Chips
+    9. Card
+    10. Pagination
+    11. Preloader
+    12. Typography
+    13. Shadow
+    14. Grid
+    15. Error Page(404,500)
+    16. Data Table
+    17. Form Elements
+    18. SweetAlert
+    19. owl carousel
+    20. Docs
+4. Footer
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+# [Color codes]
+
+# light grey (body): #eeeeee
+# indigo (content): #3949ab
+# white (Footer Background): #fff
+# white (sidebar and header background): #fff
+# black (icon color): #000
+---------------------------------------------------------------------- */
+
+
+/* =================================================================================
+body
+================================================================================= */
+
+
+/*body background*/
+
+body,
+#prepage-loader {
+    background: #eeeeee;
+}
+
+main,
+footer.form-footer {
+    background: #f5f5f5;
+}
+
+
+/*prepage loader color*/
+
+.sk-cube-grid .sk-cube {
+    background-color: #3949ab;
+}
+
+
+/* pre page loader */
+
+.spinner-layer.spinner-indigo-only {
+    border-color: #3949ab;
+}
+
+
+/*material icons color*/
+
+a .material-icons {
+    color: #000
+}
+
+
+/*text selection*/
+
+::-moz-selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+    color: white;
+    background: #5165d6;
+}
+
+::selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+    color: white;
+    background: #5165d6;
+}
+
+
+/*link color*/
+
+a {
+    color: #3949ab;
+}
+
+
+/* =================================================================================
+Header
+================================================================================= */
+
+
+/*header background*/
+
+nav.page-header {
+    background: #3949ab;
+}
+
+
+/*all header element color,search result body test color,User account dropdown structure text color*/
+
+nav.page-header,
+#search-body .search-box input,
+#search-body .search-box .material-icons,
+nav.page-header li a,
+.search-result-body li a,
+#user-account-dropdown li a,
+nav.page-header .material-icons {
+    color: #000
+}
+
+nav.page-header li a.hrz-menu .material-icons,
+nav.page-header a.hrz-menu .material-icons,
+nav.page-header li a.hrz-menu {
+    color: #fff;
+}
+
+
+/*Brand name color*/
+
+nav.page-header .brand-logo,
+#brand-banner .brand {
+    color: #fff !important;
+}
+
+
+/*search result background*/
+
+.search-result {
+    background: #fff;
+}
+
+
+/*search result title color*/
+
+.search-result-title {
+    color: #757575;
+}
+
+
+/*search result text background on hover*/
+
+.search-result-body li a:hover {
+    background: #f5f5f5;
+}
+
+
+/* =================================================================================
+Helper class
+================================================================================= */
+
+
+/*theme backgrond*/
+
+.theme-bg {
+    background: #3949ab !important;
+}
+
+
+/*theme text color*/
+
+.theme-text {
+    color: #3949ab !important;
+}
+
+
+/*Breadcrumbs*/
+
+.breadcrumbs>li>a {
+    color: #000;
+}
+
+
+/* =================================================================================
+Left Sidebar
+================================================================================= */
+
+
+/*left sidebar background and box shadow*/
+
+.left-sidebar {
+    background-color: #fafafa;
+}
+
+
+/*left sidebar menu active background*/
+
+.left-sidebar .active,
+.left-sidebar .menu-active {
+    background: #eae7e7 !important;
+}
+
+
+/*left sidebar body text color*/
+
+.left-sidebar-body ul li a,
+.toggle-icon-left-sidebar .material-icons {
+    color: rgba(49, 48, 48, 0.87);
+}
+
+
+/*left sidebar body text background on hover*/
+
+.left-sidebar-body ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/*left sidebar footer background*/
+
+.left-sidebar .sidebar-footer {
+    background: #fff;
+}
+
+
+/* =================================================================================
+Right Sidebar
+================================================================================= */
+
+
+/*right sidebar background and box shadow*/
+
+.right-sidebar {
+    background-color: #fff;
+}
+
+
+/*right sidebar tab color*/
+
+.tabs.tabs-right-sidebar .tab a {
+    color: #000;
+}
+
+
+/*right sidebar tab box shadow*/
+
+.tabs.tabs-right-sidebar {
+    box-shadow: inset 0 -1px #3949ab;
+}
+
+
+/*right sidebar tab box shadow on hover*/
+
+.tabs.tabs-right-sidebar .tab .active {
+    box-shadow: inset 0 -3px #3949ab;
+}
+
+
+/*show and hide right sidebar icon box background*/
+
+.toggle-fixed {
+    background: #fff;
+}
+
+
+/* =================================================================================
+index
+================================================================================= */
+
+#index-footer-box .footer-copyright {
+    background: #303f9f;
+    color: #fff;
+}
+
+
+/* =================================================================================
+Dropdown
+================================================================================= */
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: #3949ab;
+}
+
+
+/* =================================================================================
+Collections
+================================================================================= */
+
+.collection .collection-item.active {
+    background-color: #3949ab;
+}
+
+.secondary-content .material-icons {
+    color: #3949ab;
+}
+
+
+/* =================================================================================
+Tabs
+================================================================================= */
+
+.tabs .tab .active {
+    box-shadow: inset 0 -2px #3949ab;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+    color: #3949ab;
+}
+
+.tabs .indicator {
+    background-color: #3949ab;
+}
+
+
+/* =================================================================================
+Chips
+================================================================================= */
+
+.chips .chip.selected {
+    background-color: #3949ab;
+}
+
+.chips.focus {
+    border-bottom: 1px solid #3949ab;
+    box-shadow: 0 1px 0 0 #3949ab;
+}
+
+
+/* =================================================================================
+Card
+================================================================================= */
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #3949ab;
+}
+
+
+/* =================================================================================
+Pagination
+================================================================================= */
+
+.pagination li.active {
+    background-color: #3949ab;
+}
+
+
+/* =================================================================================
+Preloader
+================================================================================= */
+
+.progress .determinate,
+.progress .indeterminate,
+.preloader1-spinner,
+.preloader2-double-bounce1,
+.preloader2-double-bounce2,
+.preloader3-spinner>div,
+.preloader4-spinner>div,
+.preloader5-cube-grid .preloader5-cube,
+.preloader6-folding-cube .preloader6-cube:before {
+    background-color: #3949ab;
+}
+
+.progress {
+    background: #85a2e6;
+}
+
+
+/* =================================================================================
+Typography
+================================================================================= */
+
+blockquote {
+    border-left: 5px solid #3949ab;
+}
+
+
+/* =================================================================================
+Shadow
+================================================================================= */
+
+.shadow-demo {
+    background-color: #3949ab;
+}
+
+
+/* =================================================================================
+Grid
+================================================================================= */
+
+.col.grid-example {
+    background-color: #3949ab;
+}
+
+
+/* =================================================================================
+Error Page
+================================================================================= */
+
+.error-box .error-code,
+.admin-error-box .error-code {
+    color: #3949ab;
+}
+
+
+/* =================================================================================
+Data Table
+================================================================================= */
+
+div.material-table table th.sorting:after,
+div.material-table table th.sorting_asc:after,
+div.material-table table th.sorting_desc:after {
+    color: #3949ab;
+}
+
+
+/* =================================================================================
+Form Elements
+================================================================================= */
+
+
+/*radio and checkbox input*/
+
+[type="radio"]:checked+label:after,
+[type="radio"].with-gap:checked+label:after,
+[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid #3949ab !important;
+    background-color: #3949ab !important;
+}
+
+[type="radio"].with-gap:checked+label:before {
+    border: 2px solid #3949ab;
+}
+
+[type="checkbox"]:checked+label:before {
+    border-right: 2px solid #3949ab;
+    border-bottom: 2px solid #3949ab;
+}
+
+
+/* Switch */
+
+.switch label input[type=checkbox]:checked+.lever,
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #3949ab;
+}
+
+
+/* input label focus color */
+
+.input-field input:not([type])+focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=password]:focus+label,
+.input-field input[type=email]:focus+label,
+.input-field input[type=url]:focus+label,
+.input-field input[type=time]:focus+label,
+.input-field input[type=date]:focus+label,
+.input-field input[type=datetime]:focus+label,
+.input-field input[type=datetime-local]:focus+label,
+.input-field input[type=tel]:focus+label,
+.input-field input[type=number]:focus+label,
+.input-field input[type=search]:focus+label,
+.input-field textarea.materialize-textarea:focus+label {
+    color: #3949ab !important;
+}
+
+
+/* input focus color */
+
+.input-field input:not([type])+focus,
+.input-field input[type=text]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=url]:focus,
+.input-field input[type=time]:focus,
+.input-field input[type=date]:focus,
+.input-field input[type=datetime]:focus,
+.input-field input[type=datetime-local]:focus,
+.input-field input[type=tel]:focus,
+.input-field input[type=number]:focus,
+.input-field input[type=search]:focus,
+.input-field textarea.materialize-textarea:focus,
+input:not([type])+focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=time]:focus,
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+textarea.materialize-textarea:focus {
+    border-bottom: 1px solid #3949ab !important;
+    box-shadow: 0 1px 0 0 #3949ab !important;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #3949ab !important;
+    box-shadow: 0 1px 0 0 #3949ab !important;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:focus:not([readonly])+label,
+input[type=password]:focus:not([readonly])+label,
+input[type=email]:focus:not([readonly])+label,
+input[type=url]:focus:not([readonly])+label,
+input[type=time]:focus:not([readonly])+label,
+input[type=date]:focus:not([readonly])+label,
+input[type=datetime]:focus:not([readonly])+label,
+input[type=datetime-local]:focus:not([readonly])+label,
+input[type=tel]:focus:not([readonly])+label,
+input[type=number]:focus:not([readonly])+label,
+input[type=search]:focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #3949ab !important;
+}
+
+
+/* input icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #3949ab !important;
+}
+
+
+/*html range slider, date picker and time picker*/
+
+input[type=range]+.thumb,
+input[type=range]::-webkit-slider-thumb,
+.col.grid-example,
+.picker__date-display,
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected,
+.clockpicker-tick.active,
+.clockpicker-tick:hover {
+    background-color: #3949ab;
+}
+
+.picker__nav--prev:hover,
+.picker__nav--next:hover,
+button.picker__close:focus,
+button.picker__today:focus,
+button.picker__clear:focus {
+    background: #85a2e6;
+}
+
+.picker__day.picker__day--today,
+button.picker__close,
+button.picker__today {
+    color: #3949ab;
+}
+
+.picker__nav--prev,
+.picker__nav--next {
+    top: 0px;
+}
+
+.clockpicker-canvas line {
+    stroke: #3949ab;
+}
+
+.clockpicker-canvas-bg,
+.clockpicker-canvas-bearing {
+    fill: #3949ab;
+}
+
+
+/* =================================================================================
+SweetAlert
+================================================================================= */
+
+
+/* sweetAlert button */
+
+.sweet-alert button,
+.sweet-alert button:hover,
+.sweet-alert button:active {
+    background: #3949ab !important;
+    color: #fff !important;
+}
+
+
+/* =================================================================================
+owl carousel
+================================================================================= */
+
+.owldiv .owl-carousel .item {
+    background: #3949ab;
+    color: #fff;
+}
+
+
+/* =================================================================================
+Docs
+================================================================================= */
+
+.themediv ul li b {
+    color: #3949ab;
+}
+
+
+/* =================================================================================
+Footer
+================================================================================= */
+
+
+/*footer background color,footer copyright text background*/
+
+footer.page-footer,
+footer.page-footer .footer-copyright {
+    background: #fff;
+}
+
+
+/*footer copyright text color*/
+
+footer.page-footer .footer-copyright {
+    color: #666;
+}

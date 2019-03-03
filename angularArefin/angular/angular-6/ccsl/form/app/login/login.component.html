@@ -1,0 +1,14 @@
+<form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+   <input type = "text" name = "emailid" placeholder = "Enter emailid" ngModel>
+   <br/>
+   <input type = "password" name = "passwd" placeholder = "Enter passwd" ngModel>
+   <br/>
+   <input type = "submit" value = "submit">
+</form>
+
+<form #regi="ngForm" (ngSubmit)="display(regi.value)">
+M:<input type="text" name="m" ngModel/><br/>
+N:<input type="text" name="n" ngModel/><br/>
+P:<input type="text" name="p" ngModel/><br/>
+   <input type = "submit" value = "Send">
+</form>
